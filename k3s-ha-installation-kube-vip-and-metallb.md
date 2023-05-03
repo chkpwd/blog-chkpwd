@@ -23,7 +23,7 @@ sh -s - --tls-san 172.16.16.200 --disable traefik \
 
 After a successful initialization of the cluster. We need to get the kube-vip service up and running.
 
-<div class="highlight_wrap" id="bkmrk-"></div>### Prepare kube-vip manifests deployment
+### Prepare kube-vip manifests deployment
 
 K3s has an optional manifests directory that will be searched to [auto-deploy](https://rancher.com/docs/k3s/latest/en/advanced/#auto-deploying-manifests) any manifests found within. Create this directory first in order to later place the kube-vip resources inside.
 
