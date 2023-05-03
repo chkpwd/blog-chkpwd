@@ -1,3 +1,5 @@
+## High-Available Kubernetes Cluster
+
 # K3s HA Installation - Kube-Vip and Metallb
 
 **NOTE:** There are multiple ways to install K3s including [`k3sup`](https://k3sup.dev/) or [running the binary](https://rancher.com/docs/k3s/latest/en/quick-start/) locally. Whichever method you choose, the `--tls-san` flag must be passed with the same IP when generating the kube-vip DaemonSet manifest when installing the first server (control plane) instance. This is so that K3s generates an API server certificate with the kube-vip virtual IP address.
