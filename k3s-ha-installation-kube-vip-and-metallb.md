@@ -109,9 +109,10 @@ kubes-cp-2   Ready    control-plane,etcd,master   25m   v1.26.4+k3s1   172.16.16
 kubes-cp-3   Ready    control-plane,etcd,master   25m   v1.26.4+k3s1   172.16.16.203   <none>        Debian GNU/Linux 11 (bullseye)   5.10.0-21-amd64   containerd://1.6.19-k3s1
 ```
 
-### Deploying Metallb
+### Deploying Metallb - L2 Configuration
+**Note:** Limitations of L2 setup explained [here.](https://metallb.universe.tf/concepts/layer2/)
 
-To install MetalLB, apply the manifest:
+To install MetalLB, apply the manifest, configs found [here.](https://metallb.universe.tf/configuration/#layer-2-configuration)
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.9/config/manifests/metallb-native.yaml
