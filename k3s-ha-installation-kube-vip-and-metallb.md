@@ -15,9 +15,12 @@ Join the first master node to the cluster
 # Token for the k3s cluster
 SECRET=SUPER_SECRET_TOKEN
 
-curl -fL https://get.k3s.io | K3S_TOKEN=${SECRET} \
-sh -s - server --tls-san 172.16.16.200 --disable traefik \
---disable servicelb --write-kubeconfig-mode 644 \
+curl -fL https://get.k3s.io | sh -s - server \
+--token=${SECRET} \
+--tls-san 172.16.16.200 \
+--disable traefik \
+--disable servicelb \
+--write-kubeconfig-mode 644 \
 --cluster-init
 ```
 
