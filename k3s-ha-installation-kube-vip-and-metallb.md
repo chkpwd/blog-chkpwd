@@ -91,11 +91,12 @@ Either store this generated manifest separately in the /var/lib/rancher/k3s/serv
 
 ### Joining additional Control Plane(s)
 
-Join the secondary master node to the cluster
-
 ```bash
-curl -fL https://get.k3s.io | K3S_TOKEN=K1djsfh33423has32496548c0f0841924972123685::server:SUPER_SECRET_TOKEN \
-sh -s - server --disable servicelb --disable traefik \
+curl -fL https://get.k3s.io | sh -s - server \
+--token=K1051b8cff96c75ada04d408712d6a3fa86ac12e010a86eea3f1fb113fb3d6cc151::server:IAMBATMAN \
+--tls-san 172.16.16.200 \
+--disable servicelb \
+--disable traefik \
 --server https://172.16.16.201:6443
 ```
 
