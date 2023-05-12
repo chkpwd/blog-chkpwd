@@ -86,6 +86,7 @@ kube-vip manifest daemonset \
 
 ```
 Refer to the [docs](https://kube-vip.io/docs/usage/k3s/#step-3-generate-a-kube-vip-daemonset-manifest) for more info:
+
 Either store this generated manifest separately in the /var/lib/rancher/k3s/server/manifests/ directory, or append to the existing RBAC manifest called kube-vip-rbac.yaml. As a general best practice, it is a cleaner approach to place all related resources into a single YAML file.
 
 ### Joining additional Control Plane(s)
