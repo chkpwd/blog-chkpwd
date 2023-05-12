@@ -36,7 +36,7 @@ RBAC resources are needed to ensure a ServiceAccount exists with those permissio
 Get the RBAC manifest and place in the auto-deploy directory:
 
 ```sh
-curl https://kube-vip.io/manifests/rbac.yaml > /var/lib/rancher/k3s/server/manifests/kube-vip-rbac.yaml
+curl https://kube-vip.io/manifests/rbac.yaml -o /var/lib/rancher/k3s/server/manifests/kube-vip-rbac.yaml
 ```
 
 ### Generate a kube-vip DaemonSet Manifest
