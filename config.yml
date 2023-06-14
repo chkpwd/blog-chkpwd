@@ -1,0 +1,78 @@
+baseURL: "https://blog.chkpwd.com"
+languageCode: en-us
+title: chkpwd.
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: chkpwd.
+  description: "DevOps Development Journey"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: true
+  showtoc: false
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Heya! \U0001F44B"
+    Content: Welcome to my thoughts
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/chkpwd"
+    - name: reddit
+      url: "https://reddit.com/u/chkpwd"
+    - name: Hub
+      url: "https://hub.docker.com/r/chkpwd"
+
+  editPost:
+    URL: "https://github.com/chkpwd/blog-chkpwd/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier:
+      name: Search
+      url: /search/
+      weight: 1
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 2
