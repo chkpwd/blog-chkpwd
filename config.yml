@@ -56,7 +56,7 @@ params:
   editPost:
     URL: "https://github.com/chkpwd/blog-chkpwd/content"
     Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    appendFilePath: true # append file path to Edit link
 
   fuseOpts:
     isCaseSensitive: false
