@@ -71,8 +71,8 @@ menu:
     - identifier:
       name: Search
       url: /search/
-      weight: 1
+      weight: 10
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 2
+      weight: 20
