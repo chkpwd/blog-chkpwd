@@ -54,7 +54,7 @@ params:
       url: "https://hub.docker.com/r/chkpwd"
 
   editPost:
-    URL: "https://github.com/chkpwd/blog-chkpwd/blob/main/content/posts/"
+    URL: "https://github.com/chkpwd/blog-chkpwd/blob/main/content/"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # append file path to Edit link
 
