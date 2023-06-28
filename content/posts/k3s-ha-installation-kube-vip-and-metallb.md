@@ -92,7 +92,6 @@ kube-vip manifest daemonset \
     --services \
     --arp \
     --leaderElection
-
 ```
 Refer to the [docs](https://kube-vip.io/docs/usage/k3s/#step-3-generate-a-kube-vip-daemonset-manifest) for more info:
 
