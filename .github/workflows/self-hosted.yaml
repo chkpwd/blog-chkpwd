@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+name: SelfHosted - Deploy to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
