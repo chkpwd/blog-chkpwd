@@ -1,19 +1,15 @@
 baseURL: "https://blog.chkpwd.com"
 languageCode: en-us
-title: chkpwd.
+title: chkpwd
 theme: PaperMod
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
 googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: chkpwd.
@@ -24,7 +20,6 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
   disableThemeToggle: false
-
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -40,11 +35,9 @@ params:
   hideSummary: true
   showtoc: false
   tocopen: false
-
   homeInfoParams:
     Title: "Heya! \U0001F44B"
     Content: Welcome to my thoughts
-
   socialIcons:
     - name: github
       url: "https://github.com/chkpwd"
@@ -52,12 +45,10 @@ params:
       url: "https://reddit.com/u/chkpwd"
     - name: Hub
       url: "https://hub.docker.com/r/chkpwd"
-
   editPost:
     URL: "https://github.com/chkpwd/blog-chkpwd/blob/main/content/"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # append file path to Edit link
-
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
